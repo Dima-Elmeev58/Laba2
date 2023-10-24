@@ -1,4 +1,4 @@
-sole.WriteLine("Введите x");
+Console.WriteLine("Введите x");
 double x = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите y");
 double y = Convert.ToDouble(Console.ReadLine());
