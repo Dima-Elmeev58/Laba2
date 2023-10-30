@@ -1,10 +1,32 @@
-sole.WriteLine("Введите x");
+Console.WriteLine("Введите значение координаты x");
 double x = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите y");
+Console.WriteLine("Введите значение координаты у");
 double y = Convert.ToDouble(Console.ReadLine());
-int i = Math.Sign(x) + 1;
-int k = Math.Sign(y) + 1;
-string[] arr = new string[] {
-    "III квадрант", "Ось X (-)", "II квадрант", "Ось Y (-)", "ось Y (+)", "IV квадрант", " ось X (+)", "I квадрант",
-    }
-Console.WriteLine([arr [i + 3 * k]);
+if (y == 0 && x == 0)
+{
+    Console.WriteLine("Начало координат");
+}
+else if (y != 0 && x == 0)
+{
+    Console.WriteLine("На оси X");
+}
+else if (x != 0 && y == 0)
+{
+    Console.WriteLine("На оси Y");
+}
+else if (x > 0 && y > 0)
+{
+    Console.WriteLine("В первой четверти");
+}
+else if (x > 0 && y < 0)
+{
+    Console.WriteLine("В второй четверти");
+}
+else if (x < 0 && y < 0)
+{
+    Console.WriteLine("В третьей четверти");
+}
+else if (x < 0 && y > 0)
+{
+    Console.WriteLine("В четвертой четверти");
+}
